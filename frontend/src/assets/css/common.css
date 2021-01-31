@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap");
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  --primary-colour: #0d53fc;
+  --darker-colour: #3e3ef4;
+  --lighter-colour: #4198f7;
+  --contrast-colour: #49c496;
+  --shade4: #263446;
+  --shade3: #88949e;
+  --shade2: #c6cdd8;
+  --shade1: #dee5f1;
+}

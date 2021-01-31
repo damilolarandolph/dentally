@@ -1,0 +1,4 @@
+.navbar {
+  @apply py-2;
+  @apply bg-darkest-grey;
+}
