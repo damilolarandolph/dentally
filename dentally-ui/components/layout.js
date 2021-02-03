@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTooth } from 'react-icons/fa';
 import { HiMenuAlt2, HiOutlineClock } from 'react-icons/hi';
-import Titlebar from '../components/titlebar/titlebar';
+import Titlebar from './titlebar/titlebar';
 
 
 export default function Layout() {
