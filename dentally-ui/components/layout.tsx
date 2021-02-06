@@ -4,7 +4,7 @@ import { HiMenuAlt2, HiOutlineClock } from 'react-icons/hi';
 import Titlebar from './titlebar/titlebar';
 
 
-export default function Layout() {
+export default function Layout(props) {
     return <div className="flex flex-col w-screen bg-light-grey">
         <div className="flex w-full">
             <div className="flex justify-between p-3 bg-white ">
@@ -21,5 +21,8 @@ export default function Layout() {
             </div>
             <Titlebar title="Dashboard Overview" Icon={HiOutlineClock} />
         </div>
+        {props.children}
     </div>
 }
+
+

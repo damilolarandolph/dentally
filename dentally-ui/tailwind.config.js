@@ -7,8 +7,12 @@ module.exports = {
         primary: {
           light: '#4198f7',
           dark: '#3e3ef4',
+          darker: "#1e3058",
+          darkest: "#152443",
           DEFAULT: '#0d53fc',
         },
+
+
         'contrast': '#49c496',
         'darkest-grey': '#263446',
         'mid-grey': '#88949e',

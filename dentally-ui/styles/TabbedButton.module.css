@@ -1,0 +1,9 @@
+.tabbedButton {
+  @apply p-4 py-2 text-white font-body w-36 font-semibold;
+  outline: unset;
+}
+
+.selected.tabbedButton {
+  @apply bg-white text-primary-darkest border-0 rounded-md;
+  outline: unset;
+}
