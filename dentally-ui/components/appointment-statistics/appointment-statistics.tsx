@@ -1,5 +1,6 @@
 import React from "react";
 import TabbedButtons from "../buttons/tabbed-buttons";
+import Chart from "./appointment-graph";
 
 export default function AppointmentStatistics(): JSX.Element {
     return (
@@ -16,6 +17,9 @@ export default function AppointmentStatistics(): JSX.Element {
                         <TabbedButtons.Item onClick={(e) => { console.log('clicked') }}>30 Days</TabbedButtons.Item>
                     </TabbedButtons>
                 </div>
+            </div>
+            <div className="flex">
+                <Chart />
             </div>
         </div>
     );

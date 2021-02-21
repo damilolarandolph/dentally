@@ -1,5 +1,4 @@
-import React, { SVGProps } from 'react';
-import { Interface } from 'readline';
+import React, { FC, ReactElement, ReactNode, ReactText, SVGProps } from 'react';
 
 interface ButtonProps {
     Icon: React.ComponentType<SVGProps<any>>
@@ -31,4 +30,25 @@ export function BadgedButton({ Button, Icon, showBadge }: BadgeButtonProps) {
         }
     </div>
 }
+
+
+interface EmbeddedIconButtonProps {
+    icon: ReactElement,
+    children: ReactText,
+    onClick: () => void
+}
+
+export const EmbeddedIconButton: FC<EmbeddedIconButtonProps> = function ({ icon, children: text, onClick }) {
+
+    return <button className="flex items-center w-40 p-3 rounded-full bg-light-grey min-w-min">
+        <span className="ml-1 font-bold align-middle">{text}</span>
+
+        <span className="inline-block p-1 ml-auto text-white align-middle rounded-full bg-primary">
+            {icon}
+        </span>
+    </button>
+
+}
+
+
 
